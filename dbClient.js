@@ -24,7 +24,7 @@ require('dotenv').config();
 
 const { Client } = require("pg");
 
-new Client(process.env.PG_URI);
+const client = new Client(process.env.PG_URI);
 //const client = new Client("postgresql://trombi:trombi@localhost/trombi");
 // postgresql://utilisateur:password@server/bdd
 
